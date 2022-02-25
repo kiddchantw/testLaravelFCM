@@ -20,3 +20,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::get('/user', function () {
+     $user =\App\Models\User::find(1);
+    dd( $user->routeNotificationForFcm());
+});
+
+
+Route::get('/fcm', [App\Http\Controllers\Controller::class, 'index']);
+

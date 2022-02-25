@@ -176,8 +176,6 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Kreait\Laravel\Firebase\ServiceProvider::class,
-
-
     ],
 
     /*
